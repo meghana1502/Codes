@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        string s;
+        cin >> s;
+        int sum = 0;
+        int len = s.length();
+
+        for (int i = 0; i < len; i++) {
+            sum += (int)s[i];
+        }
+
+        int avg = sum / len;
+        char avgChar = (char)avg;
+
+        cout << avgChar << endl;
+    }
+    return 0;
+}
